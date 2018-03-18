@@ -13,12 +13,13 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         //
 
-        // Passing a string
-        return "Hello World!";
+        // Passing a data
+        return "The number is " . $id;
+
     }
 
     /**
