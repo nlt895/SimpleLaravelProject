@@ -38,8 +38,9 @@ Route::get('/', function () {
 //}));
 
 
-
 // The request will look for index() in the PostController file when the browser get access to /post
 // Passing the data
-Route::get('/post/{id}', 'PostController@index');
+//Route::get('/post/{id}', 'PostController@index');
 
+
+Route::resource('post','PostController');
