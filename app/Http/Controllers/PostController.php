@@ -16,6 +16,9 @@ class PostController extends Controller
     public function index()
     {
         //
+
+        // Passing a string
+        return "Hello World!";
     }
 
     /**

@@ -18,21 +18,27 @@ Route::get('/', function () {
     //return "Hello World!";
 });
 
-Route::get('/about', function() {
-    return "This is About page";
-});
+//Route::get('/about', function() {
+//    return "This is About page";
+//});
+//
+//Route::get('/contact', function() {
+//    return "This is Contact page";
+//});
+//
+//Route::get('/post/{id}/{name}', function($id,$name) {
+//    return "This is post number ". $id . " " . $name;
+//});
+//
+//Route::get('admin/post/example', array('as'=>'admin.home', function () {
+//
+//    $url = route('admin.home');
+//    return "This url is " . $url;
+//
+//}));
 
-Route::get('/contact', function() {
-    return "This is Contact page";
-});
 
-Route::get('/post/{id}/{name}', function($id,$name) {
-    return "This is post number ". $id . " " . $name;
-});
 
-Route::get('admin/post/example', array('as'=>'admin.home', function () {
+// The request will look for index() in the PostController file when the browser get access to /post
+Route::get('/post', 'PostController@index');
 
-    $url = route('admin.home');
-    return "This url is " . $url;
-
-}));
